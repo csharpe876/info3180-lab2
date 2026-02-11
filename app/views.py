@@ -49,7 +49,12 @@ def page_not_found(error):
 @app.route('/profile')
 def profile():
     """Render the user's profile page."""
-    return render_template('profile.html')
+    import datetime
+    date_joined = datetime.date(2026, 2, 1)  # Example date joined (February 1, 2026)
+    formatted_date = format_date_joined(date_joined)
+    return render_template('profile.html', date_joined=formatted_date)
 
-
+def format_date_joined(date):
+    """Format the date joined as 'Mon, Year' (e.g. Feb, 2021)."""
+    return date.strftime("%B, %Y")
 

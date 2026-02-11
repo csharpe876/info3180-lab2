@@ -6,11 +6,19 @@ body {
 .profile-card {
     max-width: 350px;
     margin: 3rem auto;
-    background: linear-gradient(180deg, #6fd37c 0%, #eaf6ea 100%);
     border-radius: 16px;
     box-shadow: 0 4px 16px rgba(0,0,0,0.08);
-    padding: 2rem 1.5rem 1.5rem 1.5rem;
+    overflow: hidden;
     text-align: center;
+    padding: 0;
+}
+.profile-top {
+    background: linear-gradient(180deg, #6fd37c 0%, #eaf6ea 100%);
+    padding: 2rem 1.5rem 1rem 1.5rem;
+}
+.profile-bottom {
+    background: #fff;
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
 }
 .profile-header {
     margin-bottom: 1rem;
@@ -34,7 +42,7 @@ body {
     margin-bottom: 0.2rem;
 }
 .profile-location, .profile-joined {
-    color: #888;
+    color: #1d1c1c;
     font-size: 0.95rem;
     margin-bottom: 0.2rem;
 }
