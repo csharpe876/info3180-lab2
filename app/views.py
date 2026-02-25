@@ -12,12 +12,12 @@ def home():
     return render_template('home.html')
 
 
-@app.route('/about/')
+@app.route('/about')
 def about():
     """Render the website's about page."""
     return render_template('about.html', name="Carl Sharpe")
 
-
+ 
 ###
 # The functions below should be applicable to all Flask apps.
 ###
